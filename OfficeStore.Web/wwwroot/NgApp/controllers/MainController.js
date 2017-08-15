@@ -9,7 +9,7 @@
 	getProducts() {
 		this.http.get("api/Products")
 			.then(res => {
-				this.pets = res.data;
+				this.products = res.data;
 			});
 	}
 
