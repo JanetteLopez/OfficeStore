@@ -7,14 +7,14 @@
 	}
 
 	getProducts() {
-		this.http.get("api/Product")
+		this.http.get("api/Products")
 			.then(res => {
 				this.pets = res.data;
 			});
 	}
 
 	addProduct() {
-		this.http.post("api/Product", this.product)
+		this.http.post("api/Products", this.product)
 			.then(res => {
 				this.product = {};
 				this.getProducts();
